@@ -10,3 +10,6 @@ and paste the .dll file in there.
 
 # My Discord
 Flex your steps in my Discord server! https://discord.gg/qnXtBzJcmA
+
+# Credits
+Thank you to husky9424, crafterbot, and lunakittyyy for helping me make this mod!

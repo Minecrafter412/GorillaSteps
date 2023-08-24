@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using GorillaTagModTemplateProject.Scripts;
 using HarmonyLib;
 
 namespace GorillaTagModTemplateProject.Patches
@@ -17,6 +15,7 @@ namespace GorillaTagModTemplateProject.Patches
             if (__instance.isOfflineVRRig)
             {
                 stepsCount++;
+                DataSystem.SaveData();
             }
         }
     }

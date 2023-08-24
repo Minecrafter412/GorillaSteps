@@ -12,4 +12,4 @@ and paste the .dll file in there.
 Flex your steps in my Discord server! https://discord.gg/qnXtBzJcmA
 
 # Credits
-Thank you to husky9424, crafterbot, and lunakittyyy for helping me make this mod!
+Thank you to decalfree for creating the saving system, and husky9424, crafterbot, and lunakittyyy for helping me make this mod!

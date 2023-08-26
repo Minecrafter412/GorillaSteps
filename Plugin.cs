@@ -19,9 +19,11 @@ namespace GorillaTagModTemplateProject
 		public GameObject StepsCounterObject = null;
 		public Text steps = null;
 		private bool ModInitialized;
+		public bool lastPressed;
+		public bool buttonPressed;
 
 
-        void Start()
+		void Start()
 		{
 			/* A lot of Gorilla Tag systems will not be set up when start is called /*
 			/* Put code in OnGameInitialized to avoid null references */
@@ -73,10 +75,20 @@ namespace GorillaTagModTemplateProject
 		void Update()
 		{
             /* Code here runs every frame when the mod is enabled */
-			if (ModInitialized)
-			{
+            InputDevices.GetDeviceAtXRNode(XRNode.RightHand).TryGetFeatureValue(CommonUsages.primaryButton, out buttonPressed);
+            if (ModInitialized)
+            {
                 steps.text = $"Steps: {HandTapPatch.stepsCount}";
             }
+            if (ModInitialized && buttonPressed && StepsCounterObject.activeSelf && !lastHeldDown)
+            {
+                StepsCounterObject.SetActive(false);
+            }
+            else if (ModInitialized && buttonPressed && !StepsCounterObject.activeSelf && !lastHeldDown)
+            {
+                StepsCounterObject.SetActive(true);
+            }
+            lastHeldDown = buttonPressed;
         }
-	}
+    }
 }

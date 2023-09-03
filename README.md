@@ -13,3 +13,6 @@ Flex your steps in my Discord server! https://discord.gg/qnXtBzJcmA
 
 # Credits
 Thank you to decalfree for creating the saving system, and husky9424, crafterbot, and lunakittyyy for helping me make this mod!
+
+# Disclaimer
+This product is not affiliated with Gorilla Tag or Another Axiom LLC and is not endorsed or otherwise sponsored by Another Axiom LLC. Portions of the materials contained herein are property of Another Axiom LLC. © 2021 Another Axiom LLC.
